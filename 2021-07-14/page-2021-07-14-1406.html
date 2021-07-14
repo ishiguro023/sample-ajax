@@ -16,10 +16,10 @@ $(function(){
     $("#btn").on( "click", function(){
 
         formData = {};
-        formData["param1"] = "実行";
+        formData["param1"] = "文字列";
 
         $.ajax({
-            url: "http://localhost/app/form-action-json.php",
+            url: "form-action-json.php",
             type: "GET",
             data: formData,
             cache: false
@@ -45,7 +45,7 @@ $(function(){
 });
 </script>
 
-<input id="btn" name="btn" type="button" value="テスト">
+<input id="btn" name="btn" type="button" value="実行">
 <div id="content" style="white-space:pre">
 </div>
 

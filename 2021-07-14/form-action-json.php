@@ -13,6 +13,7 @@ $json = new stdClass;
 $json->get = $_GET;
 $json->post = $_POST;
 $json->session = $_SESSION;
+$json->path = $_SERVER["PHP_SELF"];
 
 print json_encode( $json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT );
 
