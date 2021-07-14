@@ -14,3 +14,12 @@ formData のプロパティは formData.プロパティ文字列 と書くこと
 ```javascript
 formData.param1 = "テスト";
 ```
+## jQuery 側からサーバへデータを送る
+```javascript
+data: formData
+```
+```javascript
+{
+      "param1": "テスト"
+}
+```というフォーマットにjQuery に加工されてサーバの PHP が呼び出されます
